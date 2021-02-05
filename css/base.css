@@ -41,6 +41,10 @@ input {
   /* "\5B8B\4F53" 就是宋体的意思 这样浏览器兼容性比较好 */
   font-family: Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB,
     "\5B8B\4F53", sans-serif;
+  /* 默认有灰色边框，要去掉 */
+  border: 0;
+  /* 去除button和input获得焦点时的边框 */
+  outline: none;
 }
 
 body {
