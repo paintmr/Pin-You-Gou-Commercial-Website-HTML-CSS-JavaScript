@@ -114,3 +114,38 @@
 .bargain {
   margin-top: 5px;
 }
+.recommendation {
+  height: 163px;
+  background-color: #ebebeb;
+  margin-top: 12px;
+}
+.recommendation-hd {
+  float: left;
+  height: 163px;
+  width: 205px;
+  text-align: center;
+  padding-top: 30px;
+  background-color: #5c5251;
+}
+.recommendation-bd {
+  float: left;
+}
+.recommendation-bd ul li {
+  float: left;
+  position: relative;
+  margin-left: 11px;
+}
+/* 定好所有图片的大小，保证所有图片都以同样的大小显示出来 */
+.recommendation-bd ul li img {
+  width: 235px;
+  height: 163px;
+}
+.recommendation-bd ul li:nth-child(-n + 3)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 10px;
+  width: 1px;
+  height: 146px;
+  background-color: #ddd;
+}
