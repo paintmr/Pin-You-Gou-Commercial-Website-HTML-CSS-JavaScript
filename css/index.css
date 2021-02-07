@@ -1,0 +1,116 @@
+.main {
+  width: 980px;
+  height: 455px;
+  margin-left: 220px;
+  margin-top: 10px;
+}
+.focus {
+  float: left;
+  width: 720px;
+  height: 455px;
+}
+.newsflash {
+  float: right;
+  width: 249px;
+  height: 455px;
+}
+.news {
+  height: 165px;
+  border: 1px solid #e4e4e4;
+}
+.news-hd {
+  height: 33px;
+  border-bottom: 1px dotted#e4e4e4;
+  padding: 0 15px;
+}
+.news-hd h5 {
+  float: left;
+  font-size: 14px;
+}
+.news-hd .more {
+  float: right;
+}
+.news-hd .more::after {
+  font-family: "icomoon";
+  content: "\e920";
+}
+.news-bd {
+  padding: 5px 15px 0;
+  /* 上5，左右15，下0 */
+}
+.news-bd ul li {
+  height: 24px;
+  line-height: 24px;
+  /* 单行文本溢出省略显示 */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.lifeservice {
+  height: 210px;
+  border-left: 1px solid #e4e4e4;
+}
+.lifeservice ul {
+  width: 252px;
+}
+.lifeservice ul li {
+  float: left;
+  position: relative;
+  width: 62px;
+  height: 70px;
+  border-right: 1px solid #e4e4e4;
+  border-bottom: 1px solid #e4e4e4;
+  text-align: center;
+}
+.lifeservice ul li i {
+  /* 把i转成行内块元素，这样可以在父元素里用text-align center来对齐 */
+  display: inline-block;
+  width: 24px;
+  height: 28px;
+  margin-top: 12px;
+  background: url(../images/icons.png) no-repeat;
+}
+.lifeservice ul li:first-child i {
+  background-position: -18px -15px;
+}
+.lifeservice ul li:nth-child(2) i {
+  background-position: -78px -15px;
+}
+.lifeservice ul li:nth-child(3) i {
+  background-position: -140px -15px;
+}
+.lifeservice ul li:nth-child(4) i {
+  background-position: -205px -13px;
+}
+.lifeservice ul li:nth-child(5) i {
+  background-position: -16px -85px;
+}
+.lifeservice ul li:nth-child(6) i {
+  background-position: -73px -85px;
+}
+.lifeservice ul li:nth-child(7) i {
+  background-position: -142px -86px;
+}
+.lifeservice ul li:nth-child(8) i {
+  background-position: -202px -86px;
+}
+.lifeservice ul li:nth-child(9) i {
+  background-position: -16px -159px;
+}
+.lifeservice ul li:nth-child(10) i {
+  background-position: -79px -159px;
+}
+.lifeservice ul li:nth-child(11) i {
+  background-position: -142px -155px;
+}
+.lifeservice ul li:last-child i {
+  background-position: -204px -158px;
+}
+.discount-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.bargain {
+  margin-top: 5px;
+}
