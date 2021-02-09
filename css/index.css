@@ -213,11 +213,11 @@
   margin-top: 30px;
 }
 /* 家用电器模块 */
-.appliances-hd {
+.products-hd {
   height: 30px;
   border-bottom: 2px solid #c81623;
 }
-.appliances-hd h3 {
+.products-hd h3 {
   float: left;
   font-size: 18px;
   color: #c81623;
@@ -232,15 +232,12 @@
 .tab-list ul li a {
   padding: 0 15px;
 }
-.appliances-bd {
-  height: 361px;
-  background-color: coral;
-}
 .tab-content-item1 > div {
   float: left;
   height: 361px;
+  background-color: #fff;
 }
-.col_210 {
+.tab-content-item1 .col_210 {
   width: 210px;
   background-color: #f9f9f9;
   text-align: center;
@@ -272,10 +269,90 @@
 }
 .col_329 {
   width: 329px;
+  position: relative;
+}
+.products-col2 li {
+  height: 361px;
+  padding: 40px 45px 0 30px;
+  background-color: #aed6d8;
+  text-align: center;
+}
+.products-col2 li h4 {
+  font-size: 18px;
+  text-align: left;
+  color: #066c7d;
+}
+.products-col2 li p {
+  font-size: 16px;
+  margin-bottom: 35px;
+  text-align: left;
+  color: #066c7d;
+}
+.dots {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  margin-left: -15px;
+}
+.dots li {
+  float: left;
+  margin-right: 8px;
+}
+.dots li a {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: #3e3e3e;
+  border-radius: 50%;
+}
+.dots .active-dot {
+  background-color: #fff;
 }
 .col_221 {
   width: 221px;
 }
+.products-col3 {
+  height: 361px;
+}
+.products-col-border {
+  border-right: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+}
+.products-col3 li,
+.products-col5 li {
+  padding-top: 23px;
+  height: 180px;
+  border-bottom: 1px solid #ededed;
+  text-align: center;
+}
+.products-col3 li:last-child,
+.products-col5 li:last-child {
+  border: none;
+}
 .col_219 {
   width: 219px;
+}
+.products-col4 {
+  padding-top: 70px;
+  text-align: center;
+}
+.product-brands {
+  height: 65px;
+  /* background-color: coral; */
+  background-color: #f7f7f7;
+}
+.product-brands ul li {
+  position: relative;
+  float: left;
+  margin-right: 4px;
+}
+.product-brands ul li::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  height: 40px;
+  border-right: 1px dotted #ccc;
+}
+.product-brands ul li:last-child:after {
+  border: 0;
 }
