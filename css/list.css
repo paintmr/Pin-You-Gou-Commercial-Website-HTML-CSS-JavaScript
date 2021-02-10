@@ -1,0 +1,118 @@
+.nav {
+  overflow: hidden;
+}
+.bargains-for-seconds {
+  position: absolute;
+  left: 190px;
+  top: 40px;
+  border-left: 1px solid #c81523;
+  padding: 3px 0 0 15px;
+}
+.bargains-for-seconds-list {
+  float: left;
+}
+.bargains-for-seconds-list ul li {
+  float: left;
+}
+.bargains-for-seconds-list ul li a {
+  display: block;
+  line-height: 47px;
+  padding: 0 30px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+}
+.bargains-for-seconds-content {
+  float: left;
+}
+.bargains-for-seconds-content ul li {
+  float: left;
+}
+.bargains-for-seconds-content ul li a {
+  display: block;
+  line-height: 49px;
+  padding: 0 20px;
+  font-size: 14px;
+}
+.bargains-for-seconds-content ul li:last-child a::after {
+  content: "\e91e";
+  font-family: "icomoon";
+}
+.list-container-bd ul li {
+  float: left;
+  width: 290px;
+  height: 460px;
+  margin-right: 13px;
+  border: 1px solid transparent;
+  text-align: center;
+}
+.list-container-bd ul li:nth-child(4n) {
+  margin-right: 0;
+}
+.list-container-bd ul li:hover {
+  border: 1px solid #c81523;
+}
+.list-container-bd ul li:hover a {
+  color: #666;
+}
+.list-container-bd ul li div {
+  text-align: left;
+}
+.list-product-description {
+  padding: 0 10px;
+}
+.list-product-description p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 7px;
+}
+.list-product-prices span:first-child {
+  font-size: 14px;
+  color: #e60012;
+}
+.list-product-prices span:nth-child(2) {
+  font-size: 22px;
+  color: #e60012;
+}
+.list-product-prices span:last-child {
+  margin-left: 5px;
+  font-size: 14px;
+  color: #a4a4a4;
+  text-decoration: line-through;
+}
+.list-sales > span,
+.list-sales > div {
+  float: left;
+}
+.list-sales > span,
+.list-rest {
+  font-size: 14px;
+  color: #666;
+}
+.list-bar {
+  width: 132px;
+  height: 13px;
+  margin: 3px 9px 0 9px;
+  border: 1px solid #ed282e;
+  border-radius: 5px;
+}
+.list-bar-in {
+  width: 87%;
+  height: 100%;
+  background-color: #ed282e;
+}
+.list-rest {
+  margin-top: -3px;
+}
+.list-rest > span {
+  font-size: 16px;
+  color: #e12228;
+}
+.list-container-bd ul li button {
+  width: 100%;
+  height: 50px;
+  margin-top: 15px;
+  background-color: #b1191a;
+  font-size: 20px;
+  color: #fff;
+}
