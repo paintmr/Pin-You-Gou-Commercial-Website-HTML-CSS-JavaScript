@@ -1,0 +1,75 @@
+body {
+  height: 1000px;
+}
+.dropdown .detail-dropdown-dd {
+  display: none;
+}
+.detail-dropdown:hover .detail-dropdown-dd {
+  display: block;
+}
+.crumb-wrap {
+  margin: 25px 0 10px 0;
+  font-size: 12px;
+  color: #333;
+}
+.crumb-wrap span {
+  margin: 0 20px;
+}
+.product-pic-wrap {
+  width: 400px;
+  height: 560px;
+}
+.product-pic {
+  height: 400px;
+  border: 1px solid #ededed;
+}
+.product-pic img {
+  display: block;
+  margin: 35px auto;
+}
+.more-pics {
+  margin-top: 65px;
+}
+.pic-list li {
+  float: left;
+  padding: 0 15px;
+}
+.pic-list li:first-child a,
+.pic-list li:last-child a {
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-top: 16px;
+  border-top: 3px solid #ededed;
+  border-left: 3px solid #ededed;
+}
+.pic-list li:first-child a {
+  transform: rotate(-45deg);
+}
+
+.pic-list li:last-child a {
+  transform: rotate(135deg);
+}
+.pic-description {
+  margin-top: 25px;
+}
+.pic-description span {
+  margin-right: 23px;
+}
+.pic-description span:nth-child(2)::before {
+  content: "\ea82";
+  font-family: "icomoon";
+  color: #d54f58;
+  margin-right: 10px;
+}
+.pic-description span:nth-child(3)::before {
+  content: "\e9da";
+  font-family: "icomoon";
+  color: #d54f58;
+  margin-right: 10px;
+}
+.pic-description span:nth-child(4)::before {
+  content: "\ea53";
+  font-family: "icomoon";
+  margin-right: 10px;
+}
