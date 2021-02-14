@@ -72,3 +72,11 @@ body {
 .clearfix {
   *zoom: 1;
 }
+/* 去掉css3中input type="number"的默认样式 */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
