@@ -74,10 +74,9 @@
   color: #d54f58;
   margin-right: 10px;
 }
-.pic-description li:nth-child(4) a::before {
-  content: "\ea53";
-  font-family: "icomoon";
-  margin-right: 10px;
+.pic-description li:nth-child(4) a input {
+  vertical-align: middle;
+  margin-right: 5px;
 }
 .shopping-choices-product-name {
   font-size: 16px;
@@ -386,9 +385,9 @@
 }
 .fittings-products {
   position: relative;
-  padding: 0 17px;
+  padding-left: 17px;
 }
-.fittings-products i {
+.fittings-products > i {
   position: absolute;
   top: 55px;
   left: 160px;
@@ -411,4 +410,100 @@
   margin-top: 8px;
   font-size: 14px;
   color: #e12228;
+}
+.choose-fittings-products {
+  width: 612px;
+  height: 210px;
+  margin-left: 36px;
+}
+.choose-fittings-products .btn a {
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 50px;
+  top: 18%;
+  padding: 0 5px;
+  background-color: #ddd;
+}
+.choose-fittings-products .btn a::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-top: 3px solid #fff;
+  border-left: 3px solid #fff;
+}
+.choose-fittings-products .btn a:first-child::before {
+  transform: rotate(-45deg);
+  margin-top: 19px;
+}
+.choose-fittings-products .btn a:last-child {
+  right: 0;
+}
+.choose-fittings-products .btn a:last-child::before {
+  transform: rotate(135deg);
+  margin-top: 19px;
+  margin-left: -3px;
+}
+.choose-fittings-products ul li {
+  float: left;
+  width: 153px;
+  height: 210px;
+}
+.choose-fittings-products ul li div {
+  width: 153px;
+  height: 153px;
+  text-align: center;
+}
+.choose-fittings-products ul li div img {
+  margin-top: 22px;
+}
+.choose-fittings-products ul li p {
+  width: 130px;
+  margin-left: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 12px;
+  color: #333;
+}
+.choose-fittings-products ul li input {
+  margin-left: 13px;
+  vertical-align: middle;
+}
+.choose-fittings-products ul li span {
+  margin-left: 15px;
+  font-size: 12px;
+  color: #e12228;
+}
+
+.fittings-result {
+  width: 172px;
+  height: 265px;
+  padding-top: 47px;
+  padding-left: 17px;
+  border-left: 1px solid #ddd;
+}
+.fittings-result p {
+  font-weight: 700;
+  margin-top: 20px;
+}
+.fittings-result span {
+  font-size: 16px;
+  color: #e12228;
+}
+.fittings-result strong {
+  font-size: 24px;
+  color: #e12228;
+}
+.fittings-result a {
+  display: block;
+  width: 140px;
+  height: 45px;
+  margin-top: 45px;
+  background-color: #c81623;
+  line-height: 45px;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
 }
