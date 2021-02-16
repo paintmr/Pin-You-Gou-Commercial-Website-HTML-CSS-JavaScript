@@ -105,13 +105,13 @@
   border: 1px solid dfdfdf;
   background-color: #f7f7f7;
 }
-.shopcar::before {
+.shopcar a::before {
   content: "\e93a";
   font-family: "icomoon";
   margin-right: 5px;
   color: #b1191a;
 }
-.shopcar::after {
+.shopcar a::after {
   content: "\e920";
   font-family: "icomoon";
   margin-left: 10px;
