@@ -1,0 +1,41 @@
+.cart-header {
+  height: 80px;
+  margin-top: 25px;
+  /* background-color: coral; */
+}
+.cart-logo {
+  float: left;
+}
+.cart-word {
+  float: left;
+  margin: 15px 0 0 20px;
+  font-size: 19px;
+  color: #333;
+}
+.cart-search {
+  float: right;
+  width: 540px;
+  height: 35px;
+  border: 1px solid #b1191a;
+  overflow: hidden;
+}
+.cart-search input {
+  width: 450px;
+  height: 33px;
+  padding-left: 10px;
+  font-size: 14px;
+  color: #666;
+  line-height: 33px;
+  vertical-align: middle;
+}
+.cart-search button {
+  position: relative;
+  right: -1px;
+  width: 84px;
+  height: 33px;
+  background-color: #b1191a;
+  font-size: 16px;
+  color: #fff;
+  line-height: 33px;
+  vertical-align: middle;
+}
