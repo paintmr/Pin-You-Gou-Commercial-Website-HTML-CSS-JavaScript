@@ -261,7 +261,7 @@
 }
 .mod_copyright {
   text-align: center;
-  padding-top: 20px;
+  padding: 20px 0 40px 0;
 }
 .mod_copyright .links a {
   margin: 0 3px;

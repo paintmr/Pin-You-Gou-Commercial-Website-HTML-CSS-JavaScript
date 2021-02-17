@@ -16,7 +16,7 @@ header {
   height: 30px;
   padding-left: 8px;
   border: 1px solid #b71d1d;
-  font-size: 18px;
+  font-size: 16px;
   vertical-align: middle;
 }
 .sear-area button {
@@ -26,9 +26,9 @@ header {
   background-color: #b71d1d;
   vertical-align: middle;
   color: #fff;
-  font-size: 18px;
+  font-size: 16px;
 }
-.login-form {
+.login-form-wrap {
   width: 380px;
   height: 365px;
   margin-top: 62px;
@@ -65,4 +65,86 @@ header {
   padding-left: 10px;
   border: 1px solid #f5eecf;
   line-height: 25px;
+}
+.username,
+.password {
+  height: 35px;
+  border: 1px solid #bbbaba;
+  overflow: hidden;
+}
+.username label,
+.password label {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: #cfcdcd;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+}
+.username label::after,
+.password label::after {
+  font-family: "icomoon";
+  line-height: 35px;
+  font-size: 25px;
+}
+.username label::after {
+  content: "\e971";
+}
+.username input,
+.password input {
+  line-height: 35px;
+  font-size: 14px;
+  padding-left: 10px;
+  vertical-align: middle;
+}
+.password {
+  margin-top: 17px;
+}
+.password label::after {
+  content: "\e98f";
+  margin-left: 10px;
+}
+.safe {
+  margin-top: 20px;
+  height: 35px;
+  /* background-color: coral; */
+}
+.safe a:first-child {
+  color: #b3b3b3;
+}
+.safe a:last-child {
+  float: right;
+  color: #333;
+}
+.safe input {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.login-button a {
+  display: block;
+  width: 300px;
+  height: 40px;
+  background-color: #c81623;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+}
+.co-agent {
+  margin-top: 30px;
+}
+.co-agent ul {
+  float: left;
+}
+.co-agent ul li {
+  float: left;
+  margin-right: 20px;
+}
+.co-agent > a {
+  float: right;
+  margin-top: 7px;
+  font-size: 14px;
+  color: #1474af;
 }
