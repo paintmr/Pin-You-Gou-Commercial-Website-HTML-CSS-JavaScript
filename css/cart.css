@@ -1,7 +1,7 @@
+/* header模块 start */
 .cart-header {
   height: 80px;
   margin-top: 25px;
-  /* background-color: coral; */
 }
 .cart-logo {
   float: left;
@@ -17,10 +17,10 @@
   width: 540px;
   height: 35px;
   border: 1px solid #b1191a;
-  overflow: hidden;
 }
 .cart-search input {
-  width: 450px;
+  float: left;
+  width: 449px;
   height: 33px;
   padding-left: 10px;
   font-size: 14px;
@@ -29,13 +29,312 @@
   vertical-align: middle;
 }
 .cart-search button {
-  position: relative;
-  right: -1px;
-  width: 84px;
+  float: left;
+  width: 89px;
   height: 33px;
   background-color: #b1191a;
   font-size: 16px;
   color: #fff;
   line-height: 33px;
   vertical-align: middle;
+}
+/* header模块 end  */
+/* 购物车模块 start  */
+.total-product-number {
+  font-size: 16px;
+  color: #c81623;
+}
+.total-product-number span {
+  margin-left: 10px;
+  font-size: 14px;
+}
+/* 购物车标题栏 */
+.cart-thead {
+  height: 35px;
+  margin-top: 20px;
+  padding-left: 5px;
+  border: 1px solid #ddd;
+  background-color: #f5f5f5;
+  line-height: 35px;
+}
+.cart-thead .column {
+  float: left;
+  font-size: 12px;
+  color: #666;
+}
+.cart-thead .checkbox input,
+.shop input {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.cart-thead .goods {
+  margin-left: 205px;
+}
+.cart-thead .price {
+  margin-left: 235px;
+}
+.cart-thead .quantity {
+  margin-left: 115px;
+}
+.cart-thead .sum,
+.cart-thead .action {
+  margin-left: 120px;
+}
+/* 购物车商品列表 */
+.shop-goods-wrap {
+  margin-top: 20px;
+}
+/* 商家 */
+.shop input {
+  margin-left: 6px;
+}
+.shop > a {
+  padding: 2px;
+  font-size: 12px;
+}
+.chuanzhi {
+  background-color: #c81623;
+  color: #fff;
+}
+.shop-extra-r {
+  float: right;
+}
+.shop-extra-r a {
+  margin-left: 10px;
+  color: #c81623;
+}
+/* 购物车单个商品 */
+.item-list-wrap {
+  margin-top: 5px;
+  padding-top: 20px;
+}
+.shop {
+  height: 25px;
+  border-bottom: 2px solid #ddd;
+}
+.item-list {
+  margin-top: 20px;
+  border: 1px solid #ddd;
+}
+.item-list {
+  border-bottom: none;
+}
+.item {
+  padding: 10px 0 0 5px;
+  height: 110px;
+  border-bottom: 1px solid #ddd;
+}
+.item .cell {
+  float: left;
+}
+.p-checkbox {
+  margin-right: 15px;
+  vertical-align: top;
+}
+.p-product {
+  width: 300px;
+}
+.p-product img {
+  float: left;
+  width: 82px;
+  height: 82px;
+  margin-right: 10px;
+}
+.product-desc {
+  float: left;
+  width: 205px;
+  font-size: 12px;
+}
+.gift-wrap {
+  display: block;
+  font-size: 12px;
+  color: #999;
+}
+.gift-wrap i {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin-right: 7px;
+  background: url(../images/cart-gift.png);
+  vertical-align: middle;
+}
+.p-version {
+  width: 150px;
+  margin-left: 20px;
+}
+.p-version span {
+  display: block;
+  width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.p-price {
+  width: 130px;
+  margin-left: 20px;
+}
+.p-quantity {
+  width: 102px;
+  height: 32px;
+  margin-left: 3px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+.count-number button {
+  float: left;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+}
+.count-number input {
+  float: left;
+  width: 40px;
+  height: 30px;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  text-align: center;
+}
+.p-sum {
+  width: 160px;
+  margin-left: 83px;
+  font-weight: 700;
+}
+.p-action {
+  margin-left: 18px;
+}
+.p-action a {
+  display: block;
+}
+.item-header {
+  height: 35px;
+  margin-top: 15px;
+}
+.item-header span:first-child {
+  display: inline-block;
+  width: 45px;
+  height: 20px;
+  margin: 0 17px 0 5px;
+  border: 1px solid #c81623;
+  font-size: 12px;
+  color: #c81623;
+  text-align: center;
+}
+.item-header a:nth-child(3) {
+  height: 20px;
+  margin: 0 10px 0 35px;
+  padding: 3px;
+  background-color: #c81623;
+  color: #fff;
+}
+.item-combine {
+  border-bottom: 1px solid #ddd;
+}
+.item-combine .item {
+  border-bottom: 0;
+}
+.item-giveaways {
+  height: 50px;
+  margin-left: 60px;
+}
+.item-giveaways a {
+  display: inline-block;
+  width: 265px;
+  margin-right: 30px;
+  color: #999;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+}
+.item-giveaways span {
+  color: #666;
+}
+.item-selected {
+  background-color: #feedef;
+}
+/* 结算 */
+.sum-wrap {
+  height: 50px;
+  margin-top: 20px;
+  padding-left: 5px;
+  border: 1px solid #ddd;
+  line-height: 50px;
+}
+.sum-left {
+  float: left;
+}
+.sum-left > div {
+  float: left;
+}
+.select-all {
+  margin-right: 20px;
+}
+.select-all input {
+  margin-right: 15px;
+  vertical-align: middle;
+}
+.product-choices a {
+  margin-right: 15px;
+}
+.sum-right {
+  float: right;
+}
+.sum-right > div {
+  float: right;
+}
+.sum-right-r {
+  margin: -1px 0 0 30px;
+}
+.sum-right-r a {
+  display: block;
+  width: 110px;
+  background-color: #e60012;
+  font-size: 16px;
+  color: #fff;
+  line-height: 50px;
+  text-align: center;
+}
+.sum-right-l > div {
+  height: 25px;
+  line-height: 25px;
+}
+.sum-right-l-t span:last-child {
+  font-size: 16px;
+  color: #e60012;
+}
+.deleted-products {
+  height: 105px;
+  margin-top: 1px;
+}
+.deleted-products-title {
+  height: 55px;
+  line-height: 55px;
+}
+.deleted-product {
+  height: 35px;
+  background-color: #fffdee;
+  line-height: 35px;
+}
+.deleted-product span,
+.deleted-product a {
+  float: left;
+}
+.deleted-product span:first-child {
+  width: 235px;
+  margin-right: 345px;
+  padding-left: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.deleted-product span:nth-child(2) {
+  width: 200px;
+  margin-right: 10px;
+}
+.deleted-product span:nth-child(3) {
+  width: 200px;
+  margin-right: 50px;
+}
+.deleted-product a:last-child {
+  margin: 0 15px 0 20px;
 }
