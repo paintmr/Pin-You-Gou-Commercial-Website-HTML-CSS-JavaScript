@@ -338,3 +338,100 @@
 .deleted-product a:last-child {
   margin: 0 15px 0 20px;
 }
+/* 购物车模块 end  */
+/* 更多商品模块 start  */
+.more-products {
+  height: 372px;
+}
+.more-products-tabs {
+  height: 40px;
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+  line-height: 40px;
+}
+.more-products-tabs ul li {
+  float: left;
+}
+.more-products-tabs ul li a {
+  display: block;
+  width: 88px;
+  text-align: center;
+}
+.more-products-tab-active {
+  margin-top: -1px;
+  background-color: #c81623;
+  color: #fff;
+}
+.more-products-bd {
+  position: relative;
+  height: 310px;
+  margin-top: 20px;
+}
+
+.more-products-btns a {
+  position: absolute;
+  top: 50%;
+  margin-top: -25px;
+  width: 20px;
+  height: 50px;
+  background-color: #ddd;
+}
+.more-products-btns a:before {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-top: 3px solid #fff;
+  border-left: 3px solid #fff;
+}
+.more-products-btns a:first-child::before {
+  transform: rotate(-45deg);
+  margin-top: 80%;
+  margin-left: 5px;
+}
+.more-products-btns a:last-child {
+  right: 0;
+}
+.more-products-btns a:last-child::before {
+  transform: rotate(135deg);
+  margin-top: 80%;
+  margin-left: -3px;
+}
+.more-products-tab-content {
+  height: 100%;
+  margin: 0 40px;
+  border: 1px dotted #cacaca;
+}
+.more-products-tab-content ul li {
+  float: left;
+  width: 250px;
+  height: 308px;
+  border-right: 1px dotted #cacaca;
+  text-align: center;
+}
+.more-products-tab-content ul li img {
+  width: 195px;
+  height: 175px;
+}
+.more-products-tab-content ul li p {
+  margin: 10px 25px;
+  text-align: left;
+  color: #333;
+}
+.more-products-tab-content ul li span {
+  color: #c81623;
+  font-size: 14px;
+}
+.more-products-buy-btn {
+  display: inline-block;
+  width: 125px;
+  height: 30px;
+  border: 1px solid #cacaca;
+  margin-top: 10px;
+  line-height: 30px;
+  text-align: center;
+}
+.more-products-buy-btn em {
+  margin-right: 5px;
+  font-family: "icomoon";
+}
