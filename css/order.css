@@ -6,7 +6,6 @@
   margin-top: 20px;
   border: 1px solid #ddd;
   padding: 20px 25px 0 25px;
-  height: 1000px;
 }
 .checkout-step-wrap {
   padding: 20px 0;
@@ -151,4 +150,79 @@
 }
 .checkout-product > span:nth-child(4) {
   width: 90px;
+}
+.checkout-step-invoice-coupon {
+  padding: 20px 0;
+}
+.invoice span {
+  margin-right: 30px;
+}
+.invoice a {
+  color: #1474af;
+}
+.coupon {
+  margin: 20px 0 0 27px;
+  font-size: 14px;
+  color: #333;
+  font-weight: 700;
+}
+.coupon a {
+  font-family: "icomoon";
+  vertical-align: middle;
+  font-weight: 400;
+}
+.order-summary {
+  height: 95px;
+  margin-bottom: 10px;
+}
+.order-summary > div {
+  float: right;
+  margin-top: 25px;
+}
+.order-summary span {
+  float: right;
+  margin-bottom: 5px;
+  text-align: right;
+}
+.order-summary > div > div > span:first-child {
+  width: 130px;
+  margin-right: 35px;
+}
+.order-summary-goods-price span em,
+.shipping {
+  color: #e12228;
+}
+.total-price-address {
+  height: 70px;
+  padding-right: 35px;
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  text-align: right;
+}
+.total-price-address div:first-child {
+  margin-top: 10px;
+}
+.total-price-address div:first-child span:last-child {
+  display: inline-block;
+  width: 128px;
+  font-size: 16px;
+  color: #e12228;
+  font-weight: 700;
+}
+.total-price-address div:last-child {
+  margin-top: 5px;
+  color: #999;
+}
+.submit-btn {
+  height: 45px;
+  margin-top: 20px;
+}
+.submit-btn button {
+  float: right;
+  width: 140px;
+  height: 50px;
+  margin-right: 35px;
+  background-color: #e12228;
+  color: #fff;
+  font-size: 18px;
 }
