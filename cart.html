@@ -53,7 +53,7 @@
       </div>
       <div class="cart-word">购物车</div>
       <div class="cart-search">
-        <input type="text" placeholder="自营" />
+        <input type="text" value="请输入关键字" id="search" />
         <button>搜索</button>
       </div>
     </header>
@@ -62,7 +62,9 @@
       <div class="total-product-number">全部商品<span>11</span></div>
       <!-- 购物车标题栏 -->
       <div class="cart-thead">
-        <div class="column checkbox"><input type="checkbox" />全选</div>
+        <div class="column checkbox">
+          <input type="checkbox" id="ck-all-up" />全选
+        </div>
         <div class="column goods">商品</div>
         <div class="column price">单价（元）</div>
         <div class="column quantity">数量</div>
@@ -75,7 +77,7 @@
         <div class="shop-goods-wrap">
           <!-- 商家 -->
           <div class="shop">
-            <input type="checkbox" />
+            <input type="checkbox" class="shop-input" />
             <a href="#" class="chuanzhi">传智自营</a>
             <div class="shop-extra-r">
               <span>运费￥6.00</span><a href="#">还差￥99.00免运费</a>
@@ -83,73 +85,34 @@
           </div>
           <!-- 购物车单个商品 -->
           <div class="item-list">
-            <div class="item clearfix">
-              <div class="cell p-checkbox"><input type="checkbox" /></div>
-              <div class="cell p-product">
-                <a href="#">
-                  <img
-                    src="products/cart-tbody-item1.png"
-                    alt="cart-tbody-item1"
-                  />
-                </a>
-                <div class="product-desc">
-                  <a href="#">
-                    <span
-                      >苹果（Apple）MD463FE/A MAC Thunderbolt雷电接口
-                      至千兆以太网转</span
-                    >
-                  </a>
-                  <a href="#">
-                    <span class="gift-wrap"><i></i>购买礼品包装</span>
-                  </a>
-                </div>
-              </div>
-              <div class="cell p-version">
-                <span>颜色：银色（Corei5）处理器/8GB内存</span>
-              </div>
-              <div class="cell p-price">248.00</div>
-              <div class="cell p-quantity">
-                <div class="count-number">
-                  <button><i>-</i></button>
-                  <input type="number" value="1" />
-                  <button class="style-red"><i>+</i></button>
-                </div>
-                <p>有货</p>
-              </div>
-              <div class="cell p-sum">248.00</div>
-              <div class="cell p-action">
-                <a href="#">删除</a><a href="#">移到我的关注</a>
-              </div>
-            </div>
-            <div class="item-combine">
-              <div class="item-header">
-                <span>换购</span>
-                <span>活动商品购满2888.00元，即可加价换购商品1件</span>
-                <a href="#">查看换购品</a>
-                <a href="#">去凑单 &nbsp;&gt;</a>
-              </div>
+            <div class="item-wrap">
               <div class="item clearfix">
-                <div class="cell p-checkbox"><input type="checkbox" /></div>
+                <div class="cell p-checkbox">
+                  <input type="checkbox" class="product-input" />
+                </div>
                 <div class="cell p-product">
                   <a href="#">
                     <img
-                      src="products/cart-tbody-item2.png"
-                      alt="cart-tbody-item2"
+                      src="products/cart-tbody-item1.png"
+                      alt="cart-tbody-item1"
                     />
                   </a>
                   <div class="product-desc">
                     <a href="#">
                       <span
-                        >Apple Macbook Air 13.3英寸笔记本电脑
-                        银色（Corei5）处理器/8GB内存</span
+                        >苹果（Apple）MD463FE/A MAC Thunderbolt雷电接口
+                        至千兆以太网转</span
                       >
+                    </a>
+                    <a href="#">
+                      <span class="gift-wrap"><i></i>购买礼品包装</span>
                     </a>
                   </div>
                 </div>
                 <div class="cell p-version">
-                  <span>颜色：MacBook银色</span><span>尺寸：13.3英寸</span>
+                  <span>颜色：银色（Corei5）处理器/8GB内存</span>
                 </div>
-                <div class="cell p-price">8488.00</div>
+                <div class="cell p-price">248.00</div>
                 <div class="cell p-quantity">
                   <div class="count-number">
                     <button><i>-</i></button>
@@ -158,96 +121,153 @@
                   </div>
                   <p>有货</p>
                 </div>
-                <div class="cell p-sum">8488.00</div>
+                <div class="cell p-sum">248.00</div>
                 <div class="cell p-action">
                   <a href="#">删除</a><a href="#">移到我的关注</a>
                 </div>
               </div>
-              <div class="item-giveaways">
-                <p>
-                  <a href="#"
-                    >[赠品]圣迪威（Sendio）MacBook13.3寸屏幕保户用品套装</a
-                  >
-                  <span>X1</span>
-                </p>
-                <p>
-                  <a href="#"
-                    >[赠品]圣迪威（Sendio）屏幕保户套装MacBook13.3寸专用</a
-                  >
-                  <span>X1</span>
-                </p>
+            </div>
+            <div class="item-wrap">
+              <div class="item-combine">
+                <div class="item-header">
+                  <span>换购</span>
+                  <span>活动商品购满2888.00元，即可加价换购商品1件</span>
+                  <a href="#">查看换购品</a>
+                  <a href="#">去凑单 &nbsp;&gt;</a>
+                </div>
+                <div class="item clearfix">
+                  <div class="cell p-checkbox">
+                    <input type="checkbox" class="product-input" />
+                  </div>
+                  <div class="cell p-product">
+                    <a href="#">
+                      <img
+                        src="products/cart-tbody-item2.png"
+                        alt="cart-tbody-item2"
+                      />
+                    </a>
+                    <div class="product-desc">
+                      <a href="#">
+                        <span
+                          >Apple Macbook Air 13.3英寸笔记本电脑
+                          银色（Corei5）处理器/8GB内存</span
+                        >
+                      </a>
+                    </div>
+                  </div>
+                  <div class="cell p-version">
+                    <span>颜色：MacBook银色</span><span>尺寸：13.3英寸</span>
+                  </div>
+                  <div class="cell p-price">8488.00</div>
+                  <div class="cell p-quantity">
+                    <div class="count-number">
+                      <button><i>-</i></button>
+                      <input type="number" value="1" />
+                      <button class="style-red"><i>+</i></button>
+                    </div>
+                    <p>有货</p>
+                  </div>
+                  <div class="cell p-sum">8488.00</div>
+                  <div class="cell p-action">
+                    <a href="#">删除</a><a href="#">移到我的关注</a>
+                  </div>
+                </div>
+                <div class="item-giveaways">
+                  <p>
+                    <a href="#"
+                      >[赠品]圣迪威（Sendio）MacBook13.3寸屏幕保户用品套装</a
+                    >
+                    <span>X1</span>
+                  </p>
+                  <p>
+                    <a href="#"
+                      >[赠品]圣迪威（Sendio）屏幕保户套装MacBook13.3寸专用</a
+                    >
+                    <span>X1</span>
+                  </p>
+                </div>
               </div>
             </div>
-            <div class="item clearfix item-selected">
-              <div class="cell p-checkbox">
-                <input type="checkbox" checked="checked" />
-              </div>
-              <div class="cell p-product">
-                <a href="#">
-                  <img
-                    src="products/cart-tbody-item3.png"
-                    alt="cart-tbody-item3"
+            <div class="item-wrap item-selected">
+              <div class="item clearfix">
+                <div class="cell p-checkbox">
+                  <input
+                    type="checkbox"
+                    checked="checked"
+                    class="product-input"
                   />
-                </a>
-                <div class="product-desc">
-                  <a href="#">
-                    <span>半岛铁盒移动电源A2200 白色2200mah</span>
-                  </a>
-                  <a href="#">
-                    <span class="gift-wrap"><i></i>购买礼品包装</span>
-                  </a>
                 </div>
-              </div>
-              <div class="cell p-version">
-                <span>型号：A2200</span>
-              </div>
-              <div class="cell p-price">19.00</div>
-              <div class="cell p-quantity">
-                <div class="count-number">
-                  <button><i>-</i></button>
-                  <input type="number" value="1" />
-                  <button class="style-red"><i>+</i></button>
+                <div class="cell p-product">
+                  <a href="#">
+                    <img
+                      src="products/cart-tbody-item3.png"
+                      alt="cart-tbody-item3"
+                    />
+                  </a>
+                  <div class="product-desc">
+                    <a href="#">
+                      <span>半岛铁盒移动电源A2200 白色2200mah</span>
+                    </a>
+                    <a href="#">
+                      <span class="gift-wrap"><i></i>购买礼品包装</span>
+                    </a>
+                  </div>
                 </div>
-                <p>有货</p>
-              </div>
-              <div class="cell p-sum">19.00</div>
-              <div class="cell p-action">
-                <a href="#">删除</a><a href="#">移到我的关注</a>
+                <div class="cell p-version">
+                  <span>型号：A2200</span>
+                </div>
+                <div class="cell p-price">19.00</div>
+                <div class="cell p-quantity">
+                  <div class="count-number">
+                    <button><i>-</i></button>
+                    <input type="number" value="1" />
+                    <button class="style-red"><i>+</i></button>
+                  </div>
+                  <p>有货</p>
+                </div>
+                <div class="cell p-sum">19.00</div>
+                <div class="cell p-action">
+                  <a href="#">删除</a><a href="#">移到我的关注</a>
+                </div>
               </div>
             </div>
-            <div class="item clearfix">
-              <div class="cell p-checkbox"><input type="checkbox" /></div>
-              <div class="cell p-product">
-                <a href="#">
-                  <img
-                    src="products/cart-tbody-item4.png"
-                    alt="cart-tbody-item4"
-                  />
-                </a>
-                <div class="product-desc">
-                  <a href="#">
-                    <span>苹果（Apple）iPhone6(a1586) 16g 金色移动联通</span>
-                  </a>
-                  <a href="#">
-                    <span class="gift-wrap"><i></i>购买礼品包装</span>
-                  </a>
+            <div class="item-wrap">
+              <div class="item clearfix">
+                <div class="cell p-checkbox">
+                  <input type="checkbox" class="product-input" />
                 </div>
-              </div>
-              <div class="cell p-version">
-                <span>颜色：金色</span>
-              </div>
-              <div class="cell p-price">3799.00</div>
-              <div class="cell p-quantity">
-                <div class="count-number">
-                  <button><i>-</i></button>
-                  <input type="number" value="1" />
-                  <button class="style-red"><i>+</i></button>
+                <div class="cell p-product">
+                  <a href="#">
+                    <img
+                      src="products/cart-tbody-item4.png"
+                      alt="cart-tbody-item4"
+                    />
+                  </a>
+                  <div class="product-desc">
+                    <a href="#">
+                      <span>苹果（Apple）iPhone6(a1586) 16g 金色移动联通</span>
+                    </a>
+                    <a href="#">
+                      <span class="gift-wrap"><i></i>购买礼品包装</span>
+                    </a>
+                  </div>
                 </div>
-                <p>有货</p>
-              </div>
-              <div class="cell p-sum">3799.00</div>
-              <div class="cell p-action">
-                <a href="#">删除</a><a href="#">移到我的关注</a>
+                <div class="cell p-version">
+                  <span>颜色：金色</span>
+                </div>
+                <div class="cell p-price">3799.00</div>
+                <div class="cell p-quantity">
+                  <div class="count-number">
+                    <button><i>-</i></button>
+                    <input type="number" value="1" />
+                    <button class="style-red"><i>+</i></button>
+                  </div>
+                  <p>有货</p>
+                </div>
+                <div class="cell p-sum">3799.00</div>
+                <div class="cell p-action">
+                  <a href="#">删除</a><a href="#">移到我的关注</a>
+                </div>
               </div>
             </div>
           </div>
@@ -256,66 +276,70 @@
         <div class="shop-goods-wrap">
           <!-- 商家 -->
           <div class="shop">
-            <input type="checkbox" />
+            <input type="checkbox" class="shop-input" />
             <a href="#">神州数码专营店</a>
           </div>
           <!-- 购物车单个商品 -->
           <div class="item-list">
-            <div class="item-combine">
-              <div class="item-header">
-                <span>换购</span>
-                <span>活动商品购满2888.00元，即可加价换购商品1件</span>
-                <a href="#">查看换购品</a>
-                <a href="#">去凑单 &nbsp;&gt;</a>
-              </div>
-              <div class="item clearfix">
-                <div class="cell p-checkbox"><input type="checkbox" /></div>
-                <div class="cell p-product">
-                  <a href="#">
-                    <img
-                      src="products/cart-tbody-item5.png"
-                      alt="cart-tbody-item5"
-                    />
-                  </a>
-                  <div class="product-desc">
+            <div class="item-wrap">
+              <div class="item-combine">
+                <div class="item-header">
+                  <span>换购</span>
+                  <span>活动商品购满2888.00元，即可加价换购商品1件</span>
+                  <a href="#">查看换购品</a>
+                  <a href="#">去凑单 &nbsp;&gt;</a>
+                </div>
+                <div class="item clearfix">
+                  <div class="cell p-checkbox">
+                    <input type="checkbox" class="product-input" />
+                  </div>
+                  <div class="cell p-product">
                     <a href="#">
-                      <span
-                        >DELL 戴尔Ins 15MR-75 28SS15英寸
-                        银色（Corei5）处理器/8GB内存
-                      </span>
+                      <img
+                        src="products/cart-tbody-item5.png"
+                        alt="cart-tbody-item5"
+                      />
                     </a>
+                    <div class="product-desc">
+                      <a href="#">
+                        <span
+                          >DELL 戴尔Ins 15MR-75 28SS15英寸
+                          银色（Corei5）处理器/8GB内存
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="cell p-version">
+                    <span>颜色：银色</span><span>尺寸：13.3英寸</span>
+                  </div>
+                  <div class="cell p-price">3699.00</div>
+                  <div class="cell p-quantity">
+                    <div class="count-number">
+                      <button><i>-</i></button>
+                      <input type="number" value="1" />
+                      <button class="style-red"><i>+</i></button>
+                    </div>
+                    <p>有货</p>
+                  </div>
+                  <div class="cell p-sum">3699.00</div>
+                  <div class="cell p-action">
+                    <a href="#">删除</a><a href="#">移到我的关注</a>
                   </div>
                 </div>
-                <div class="cell p-version">
-                  <span>颜色：银色</span><span>尺寸：13.3英寸</span>
+                <div class="item-giveaways">
+                  <p>
+                    <a href="#"
+                      >[赠品]圣迪威（Sendio）MacBook13.3寸屏幕保户用品套装</a
+                    >
+                    <span>X1</span>
+                  </p>
+                  <p>
+                    <a href="#"
+                      >[赠品]圣迪威（Sendio）屏幕保户套装MacBook13.3寸专用</a
+                    >
+                    <span>X1</span>
+                  </p>
                 </div>
-                <div class="cell p-price">3699.00</div>
-                <div class="cell p-quantity">
-                  <div class="count-number">
-                    <button><i>-</i></button>
-                    <input type="number" value="1" />
-                    <button class="style-red"><i>+</i></button>
-                  </div>
-                  <p>有货</p>
-                </div>
-                <div class="cell p-sum">3699.00</div>
-                <div class="cell p-action">
-                  <a href="#">删除</a><a href="#">移到我的关注</a>
-                </div>
-              </div>
-              <div class="item-giveaways">
-                <p>
-                  <a href="#"
-                    >[赠品]圣迪威（Sendio）MacBook13.3寸屏幕保户用品套装</a
-                  >
-                  <span>X1</span>
-                </p>
-                <p>
-                  <a href="#"
-                    >[赠品]圣迪威（Sendio）屏幕保户套装MacBook13.3寸专用</a
-                  >
-                  <span>X1</span>
-                </p>
               </div>
             </div>
           </div>
@@ -324,7 +348,9 @@
       <!-- 全选&结算 -->
       <div class="w sum-wrap">
         <div class="sum-left">
-          <div class="select-all"><input type="checkbox" />全选</div>
+          <div class="select-all">
+            <input type="checkbox" id="ck-all-down" />全选
+          </div>
           <div class="product-choices">
             <a href="#">删除选中的商品</a>
             <a href="#">移到我的关注</a>
@@ -361,72 +387,162 @@
     <!-- 更多商品推荐模块 start  -->
     <div class="w more-products">
       <div class="more-products-tabs">
-        <ul>
-          <li><a href="#" class="more-products-tab-active">猜你喜欢</a></li>
-          <li><a href="#">特惠换购</a></li>
+        <ul id="more-products-tabs">
+          <li class="more-products-tab-active">猜你喜欢</li>
+          <li>特惠换购</li>
         </ul>
       </div>
       <div class="more-products-bd">
-        <div class="more-products-btns"><a href="#"></a><a href="#"></a></div>
-        <div class="more-products-tab-content">
-          <ul>
-            <li>
-              <a href="#">
-                <div>
-                  <img
-                    src="products/cart-more-products1.png"
-                    alt="cart-more-products1"
-                  />
-                </div>
-                <p>飞科（FLYCO）FS7805鼻毛修剪器 电动鼻毛器 修鼻毛机</p>
-                <span>￥25.00</span>
-              </a>
-              <br />
-              <a href="#" class="more-products-buy-btn"><em></em>加入购物车</a>
-            </li>
-            <li>
-              <a href="#">
-                <div>
-                  <img
-                    src="products/cart-more-products2.png"
-                    alt="cart-more-products2"
-                  />
-                </div>
-                <p>飞科（FLYCO）FS7805鼻毛修剪器 电动鼻毛器 修鼻毛机</p>
-                <span>￥29.00</span>
-              </a>
-              <br />
-              <a href="#" class="more-products-buy-btn"><em></em>加入购物车</a>
-            </li>
-            <li>
-              <a href="#">
-                <div>
-                  <img
-                    src="products/cart-more-products3.png"
-                    alt="cart-more-products3"
-                  />
-                </div>
-                <p>飞科（FLYCO）FH6218大功率电吹风机2000W负离子</p>
-                <span>￥69.00</span>
-              </a>
-              <br />
-              <a href="#" class="more-products-buy-btn"><em></em>加入购物车</a>
-            </li>
-            <li>
-              <a href="#">
-                <div>
-                  <img
-                    src="products/cart-more-products4.png"
-                    alt="cart-more-products4"
-                  />
-                </div>
-                <p>飞科（FLYCO）FC5808专业电动理发器成人儿童推剪</p>
-                <span>￥59.00</span>
-              </a>
-              <br />
-              <a href="#" class="more-products-buy-btn"><em></em>加入购物车</a>
-            </li>
-          </ul>
+        <div class="more-products-tab-item more-products-tab-item-selected">
+          <div class="more-products-btns">
+            <a href="#"></a>
+            <a href="#"></a>
+          </div>
+          <div class="more-products-tab-content">
+            <ul class="clearfix">
+              <li>
+                <a href="#">
+                  <div>
+                    <img
+                      src="products/cart-more-products1.png"
+                      alt="cart-more-products1"
+                    />
+                  </div>
+                  <p>
+                    美的（Midea） 40升补湿电烤箱Master系列 专业烘焙
+                    上下管独立控温 复古补湿 旋转烧烤 可发酵PT4011W
+                  </p>
+                  <span>￥1399.00</span>
+                </a>
+                <a href="#" class="more-products-buy-btn"
+                  ><em></em>加入购物车</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <div>
+                    <img
+                      src="products/cart-more-products2.png"
+                      alt="cart-more-products2"
+                    />
+                  </div>
+                  <p>
+                    飞利浦(PHILIPS) 电动牙刷 成人声波震动牙刷(自带刷头*1)
+                    HX6730/02
+                  </p>
+                  <span>￥379.00</span>
+                </a>
+                <a href="#" class="more-products-buy-btn"
+                  ><em></em>加入购物车</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <div>
+                    <img
+                      src="products/cart-more-products3.png"
+                      alt="cart-more-products3"
+                    />
+                  </div>
+                  <p>
+                    小熊（Bear）酸奶机家用全自动酸奶发酵菌不锈钢内胆SNJ-C10H1
+                  </p>
+                  <span>￥88.00</span>
+                </a>
+                <a href="#" class="more-products-buy-btn"
+                  ><em></em>加入购物车</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <div>
+                    <img
+                      src="products/cart-more-products4.png"
+                      alt="cart-more-products4"
+                    />
+                  </div>
+                  <p>
+                    米家台灯Lite
+                    国标A级照度三档舒适好光多角度灵活调节无蓝光危害、无可视频闪
+                  </p>
+                  <span>￥79.00</span>
+                </a>
+                <a href="#" class="more-products-buy-btn"
+                  ><em></em>加入购物车</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="more-products-tab-item">
+          <div class="more-products-btns">
+            <a href="#"></a>
+            <a href="#"></a>
+          </div>
+          <div class="more-products-tab-content">
+            <ul>
+              <li>
+                <a href="#">
+                  <div>
+                    <img
+                      src="products/cart-more-products5.png"
+                      alt="cart-more-products5"
+                    />
+                  </div>
+                  <p>飞科（FLYCO）FS7805鼻毛修剪器 电动鼻毛器 修鼻毛机</p>
+                  <span>￥25.00</span>
+                </a>
+                <a href="#" class="more-products-buy-btn"
+                  ><em></em>加入购物车</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <div>
+                    <img
+                      src="products/cart-more-products6.png"
+                      alt="cart-more-products6"
+                    />
+                  </div>
+                  <p>飞科（FLYCO）FS7805鼻毛修剪器 电动鼻毛器 修鼻毛机</p>
+                  <span>￥29.00</span>
+                </a>
+                <a href="#" class="more-products-buy-btn"
+                  ><em></em>加入购物车</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <div>
+                    <img
+                      src="products/cart-more-products7.png"
+                      alt="cart-more-products7"
+                    />
+                  </div>
+                  <p>飞科（FLYCO）FH6218大功率电吹风机2000W负离子</p>
+                  <span>￥69.00</span>
+                </a>
+                <a href="#" class="more-products-buy-btn"
+                  ><em></em>加入购物车</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <div>
+                    <img
+                      src="products/cart-more-products8.png"
+                      alt="cart-more-products8"
+                    />
+                  </div>
+                  <p>飞科（FLYCO）FC5808专业电动理发器成人儿童推剪</p>
+                  <span>￥59.00</span>
+                </a>
+                <a href="#" class="more-products-buy-btn"
+                  ><em></em>加入购物车</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -546,5 +662,8 @@
       </div>
     </footer>
     <!-- footer end -->
+    <!-- 引入JavaScript文件 -->
+    <script src="./js/common.js"></script>
+    <script src="./js/cart.js"></script>
   </body>
 </html>

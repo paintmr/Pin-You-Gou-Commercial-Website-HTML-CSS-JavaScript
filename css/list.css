@@ -27,16 +27,23 @@
 }
 .bargains-for-seconds-content ul li {
   float: left;
-}
-.bargains-for-seconds-content ul li a {
-  display: block;
   line-height: 49px;
   padding: 0 20px;
   font-size: 14px;
 }
+.bargains-for-seconds-content ul li:hover {
+  cursor: pointer;
+}
 .bargains-for-seconds-content ul li:last-child a::after {
+  margin-left: 5px;
   content: "\e91e";
   font-family: "icomoon";
+}
+.tab-item {
+  display: none;
+}
+.tab-item-selected {
+  display: block;
 }
 .list-container-bd ul li {
   float: left;

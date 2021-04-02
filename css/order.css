@@ -26,7 +26,12 @@
   margin-left: 50px;
 }
 .address {
+  display: none;
   height: 36px;
+  margin-bottom: 5px;
+}
+.show-address {
+  display: block;
 }
 .address > div,
 .pick-up-address > div {
@@ -41,6 +46,9 @@
   line-height: 30px;
   text-align: center;
 }
+.address-selected {
+  display: block;
+}
 .address-selected a {
   border: 3px solid #c81623;
 }
@@ -50,7 +58,15 @@
   color: #666;
 }
 .more-addresses {
+  display: none;
   margin-top: 20px;
+}
+.more-addresses:hover {
+  cursor: pointer;
+  color: #c81623;
+}
+.more-addresses-btn {
+  display: block;
 }
 .more-addresses em {
   font-family: "icomoon";
@@ -62,24 +78,25 @@
   float: left;
   height: 30px;
 }
-.payment li a {
-  display: block;
+.payment li {
   width: 90px;
   border: 1px solid #ddd;
   line-height: 30px;
   text-align: center;
 }
-.payment li:nth-child(2) a {
+.payment li:hover {
+  cursor: pointer;
+  color: #e12228;
+}
+.payment li:nth-child(n + 2) {
   border-left: none;
 }
-.payment li:nth-child(3) a {
-  margin-left: 10px;
-}
-.payment li:nth-child(4) a {
+.payment li:nth-child(4) {
+  display: block;
   border: none;
   line-height: 32px;
 }
-.payment .payment-selected {
+.step-content .payment .payment-selected {
   border: 3px solid #c81623;
   line-height: 26px;
 }
