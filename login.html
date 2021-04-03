@@ -25,42 +25,63 @@
         <div class="login-wrap-left fl">
           <img src="products/login1.png" alt="login1" />
           <div class="sear-area">
-            <input type="text" placeholder="手机节" />
+            <input type="text" value="请输入关键字" id="search" />
             <button>搜索</button>
           </div>
         </div>
         <div class="login-form-wrap fl">
-          <div class="login-tabs">
-            <div>扫码登录</div>
-            <div class="login-tabs-active">账户登录</div>
+          <div class="login-tabs" id="login-tabs">
+            <div class="login-tabs-active">扫码登录</div>
+            <div>账户登录</div>
           </div>
-          <div class="warning">公共场所不建议自动登录，以免账号丢失</div>
-          <div class="login-form">
-            <form action="#">
-              <div class="username">
-                <label for="username"></label
-                ><input
-                  type="text"
-                  id="username"
-                  placeholder="邮箱/用户名/手机号"
+          <div id="login-tab-items">
+            <div class="login-tab-item login-tab-item-active">
+              <div class="qr-code" id="qr-code">
+                <img src="./images/login-QR-code.png" alt="login-QR-code" />
+                <img
+                  src="./images/login-QR-code-mobile.png"
+                  alt="login-QR-code-mobile"
                 />
               </div>
-              <div class="password">
-                <label for="password"></label
-                ><input
-                  type="password"
-                  id="password"
-                  placeholder="请输入密码"
-                />
+              <div class="qr-code-desc">
+                打开<a href="#">手机品优购</a> 扫描二维码
               </div>
-              <div class="safe">
-                <a href="#">
-                  <input type="checkbox" checked="checked" />自动登录
-                </a>
-                <a href="#">忘记密码？</a>
+              <div class="qr-code-login-benefits">
+                <span>免输入</span>
+                <span>更快</span>
+                <span>更安全</span>
               </div>
-              <div class="login-button"><a href="#">登 录</a></div>
-            </form>
+            </div>
+            <div class="login-tab-item">
+              <div class="warning">公共场所不建议自动登录，以免账号丢失</div>
+              <div class="login-form">
+                <form action="#">
+                  <div class="username">
+                    <label for="username"></label
+                    ><input
+                      type="text"
+                      id="username"
+                      placeholder="邮箱/用户名/手机号"
+                    />
+                  </div>
+                  <div class="password">
+                    <label for="password"></label
+                    ><input
+                      type="password"
+                      id="password"
+                      placeholder="请输入密码"
+                    />
+                  </div>
+                  <div class="safe">
+                    <a href="#">
+                      <input type="checkbox" checked="checked" />自动登录
+                    </a>
+                    <a href="#">忘记密码？</a>
+                  </div>
+                  <div class="login-button"><a href="#">登 录</a></div>
+                </form>
+              </div>
+            </div>
           </div>
           <div class="co-agent">
             <ul>
@@ -107,5 +128,8 @@
         </div>
       </div>
     </footer>
+    <!-- 引入JavaScript代码 -->
+    <script src="./js/common.js"></script>
+    <script src="./js/login.js"></script>
   </body>
 </html>

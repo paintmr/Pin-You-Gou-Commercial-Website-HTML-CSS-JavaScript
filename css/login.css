@@ -16,8 +16,9 @@ header {
   height: 30px;
   padding-left: 8px;
   border: 1px solid #b71d1d;
-  font-size: 16px;
+  font-size: 12px;
   vertical-align: middle;
+  color: #666;
 }
 .sear-area button {
   width: 80px;
@@ -29,6 +30,7 @@ header {
   font-size: 16px;
 }
 .login-form-wrap {
+  position: relative;
   width: 380px;
   height: 365px;
   margin-top: 62px;
@@ -38,6 +40,9 @@ header {
 .login-tabs {
   position: relative;
   height: 63px;
+}
+.login-tabs:hover {
+  cursor: pointer;
 }
 .login-tabs::after {
   content: "";
@@ -57,6 +62,57 @@ header {
 }
 .login-tabs .login-tabs-active {
   color: #b71d1d;
+}
+.login-tab-item {
+  display: none;
+}
+.login-tab-item-active {
+  display: block;
+}
+.qr-code {
+  height: 168px;
+  margin: 0 auto;
+  text-align: center;
+}
+.qr-code img:first-child {
+  margin-top: 10px;
+}
+.qr-code img:nth-child(2) {
+  display: none;
+}
+.qr-code-desc {
+  margin-top: 10px;
+  color: #666;
+  text-align: center;
+  font-size: 12px;
+}
+.qr-code-desc a {
+  margin-right: 10px;
+  color: #e4393c;
+}
+.qr-code-login-benefits {
+  height: 25px;
+  margin-top: 10px;
+  line-height: 25px;
+  text-align: center;
+}
+.qr-code-login-benefits span:nth-child(-n + 2) {
+  margin-right: 30px;
+}
+.qr-code-login-benefits span::before {
+  display: inline-block;
+  content: "";
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  background: url(../images/login-QR-code-sprite.png) no-repeat;
+  vertical-align: middle;
+}
+.qr-code-login-benefits span:nth-child(2):before {
+  background: url(../images/login-QR-code-sprite.png) no-repeat -27px 0;
+}
+.qr-code-login-benefits span:nth-child(3):before {
+  background: url(../images/login-QR-code-sprite.png) no-repeat -54px 0;
 }
 .warning {
   height: 25px;
@@ -133,7 +189,9 @@ header {
   font-weight: 700;
 }
 .co-agent {
-  margin-top: 30px;
+  position: absolute;
+  left: 40px;
+  bottom: 17px;
 }
 .co-agent ul {
   float: left;
