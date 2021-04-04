@@ -4,11 +4,24 @@
 .fr {
   float: right;
 }
-.dropdown .detail-dropdown-dd {
-  display: none;
+.detail-dropdown {
+  position: relative;
+}
+.detail-dropdown:hover {
+  cursor: pointer;
+}
+.detail-dropdown .dt {
+  position: absolute;
+  height: 47px;
 }
 .detail-dropdown:hover .detail-dropdown-dd {
   display: block;
+}
+.dropdown .detail-dropdown-dd {
+  position: absolute;
+  display: none;
+  top: 45px;
+  z-index: 10;
 }
 .crumb-wrap {
   margin: 25px 0 10px 0;
@@ -35,25 +48,31 @@
 .more-pics {
   margin-top: 65px;
 }
-.pic-list li {
-  float: left;
-  padding: 0 15px;
+.pic-list {
+  position: relative;
+  padding: 0 25px;
 }
-.pic-list li:first-child a,
-.pic-list li:last-child a {
-  display: block;
+.pic-list > a:first-child,
+.pic-list > a:last-child {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   width: 20px;
   height: 20px;
-  margin-top: 16px;
   border-top: 3px solid #ededed;
   border-left: 3px solid #ededed;
 }
-.pic-list li:first-child a {
+.pic-list > a:first-child {
+  left: 0;
   transform: rotate(-45deg);
 }
-
-.pic-list li:last-child a {
+.pic-list > a:last-child {
+  right: 0;
   transform: rotate(135deg);
+}
+.pic-list li {
+  float: left;
+  margin: 0 18px;
 }
 .pic-description {
   margin-top: 25px;
@@ -287,13 +306,13 @@
 .more-products-categories-tabs ul li {
   float: left;
   width: 50%;
-}
-.more-products-categories-tabs ul li a {
-  display: block;
   background-color: #f1f1f1;
   border-bottom: 1px solid #ddd;
   line-height: 35px;
   text-align: center;
+}
+.more-products-categories-tabs ul li:hover {
+  cursor: pointer;
 }
 .more-products-categories-tabs .more-products-categories-tabs-active {
   background-color: #fff;
@@ -301,11 +320,17 @@
   color: #c81623;
   font-size: 12px;
 }
-.more-products-categories-list ul {
+.more-products-categories-tab-item {
+  display: none;
+}
+.more-products-categories-tab-item-selected {
+  display: block;
+}
+.more-products-categories-list {
   width: 100%;
   padding: 0 10px;
 }
-.more-products-categories-list ul li {
+.more-products-categories-list li {
   float: left;
   width: 50%;
   height: 30px;
@@ -341,7 +366,7 @@
   text-align: left;
   font-weight: 700;
 }
-.more-products ul li a {
+.more-products ul li .add-to-cart {
   display: inline-block;
   width: 90px;
   height: 30px;
@@ -518,12 +543,13 @@
 }
 .product-detail-tabs ul li {
   float: left;
-}
-.product-detail-tabs ul li a {
   padding: 0 20px;
   font-size: 12px;
   color: #333;
   line-height: 40px;
+}
+.product-detail-tabs ul li {
+  cursor: pointer;
 }
 .product-detail-tabs .product-detail-tabs-selected {
   display: block;
@@ -532,34 +558,99 @@
   color: #fff;
 }
 .product-detail-tab-content {
+  display: none;
   margin-top: 25px;
+}
+.product-detail-tab-content-selected {
+  display: block;
 }
 .product-detail-tab-content-parameter-overview {
   margin-bottom: 15px;
   padding: 0 0 18px 22px;
   border-bottom: 1px solid #ddd;
 }
-.product-detail-tab-content-parameter-overview a {
+.product-detail-tab-content-parameter-overview span {
   float: right;
   font-size: 12px;
   color: #333;
   font-weight: 700;
 }
-.product-detail-tab-content-parameter-overview a::after {
+.product-detail-tab-content-parameter-overview span:hover {
+  cursor: pointer;
+}
+.product-detail-tab-content-parameter-overview span::after {
   content: "\e91e";
   margin-left: 5px;
   font-family: "icomoon";
+}
+.product-detail-tab-content-parameter-overview span:last-child::after {
+  content: "\e921";
+  margin-left: 5px;
+  font-family: "icomoon";
+}
+.product-detail-tab-content-parameter-overview-more {
+  display: none;
 }
 .product-detail-tab-content-img1 {
   background-color: #fcfcfc;
   text-align: center;
 }
-.product-detail-tab-content-img2 {
-  background-color: #f0f0f0;
-  text-align: center;
+.p-item {
+  padding: 12px 0 1px 100px;
+  color: #999;
+  font-size: 12px;
+  border-bottom: 1px solid #eee;
 }
-.product-detail-tab-content-img3 {
-  text-align: center;
+.p-item h3 {
+  float: left;
+  width: 200px;
+  font-weight: 400;
+}
+.p-item > dl {
+  margin-left: 200px;
+}
+.p-item > dl > dl {
+  margin-bottom: 10px;
+}
+.p-item > dl > dl > dt {
+  float: left;
+  width: 160px;
+}
+.question-mark {
+  display: inline-block;
+  position: relative;
+  width: 16px;
+  height: 16px;
+  top: 2px;
+  margin-left: 5px;
+  background: url("../images/detail-question-mark.png") no-repeat;
+  /* vertical-align: middle; */
+}
+.question-mark:hover {
+  cursor: pointer;
+}
+.question-mark:hover .explanation {
+  display: block;
+}
+.explanation {
+  position: absolute;
+  display: none;
+  width: 200px;
+  padding: 8px 10px;
+  top: 20px;
+  left: -10px;
+  background: #fff;
+  border: 1px solid #cecbce;
+  box-shadow: 0 0 2px 2px #eee;
+  z-index: 1;
+}
+.explanation::before {
+  position: absolute;
+  content: "";
+  top: -6px;
+  width: 16px;
+  height: 16px;
+  background: url("../images/detail-question-mark.png") no-repeat -17px;
 }
 .likes {
   margin-top: 20px;

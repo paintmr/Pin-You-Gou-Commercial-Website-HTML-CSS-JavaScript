@@ -133,7 +133,7 @@
       <div class="crumb-wrap">
         <a href="#">手机、数码、通讯</a><span>&gt;</span><a href="#">手机</a
         ><span>&gt;</span><a href="#">Apple苹果</a><span>&gt;</span
-        ><a href="#">iPhone 6S Plus系类</a>
+        ><a href="#">iPhone 12</a>
       </div>
     </div>
     <!-- 当前产品层级 start-->
@@ -148,45 +148,40 @@
           />
         </div>
         <div class="more-pics">
-          <ul class="pic-list clearfix">
-            <li><a href="#"></a></li>
-            <li>
-              <a href="#"
-                ><img
-                  src="products/detail-product-pic-wrap2.png"
-                  alt="detail-product-pic-wrap2"
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img
-                  src="products/detail-product-pic-wrap3.png"
-                  alt="detail-product-pic-wrap3"
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img
-                  src="products/detail-product-pic-wrap4.png"
-                  alt="detail-product-pic-wrap4"
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img
-                  src="products/detail-product-pic-wrap5.png"
-                  alt="detail-product-pic-wrap5"
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img
-                  src="products/detail-product-pic-wrap6.png"
-                  alt="detail-product-pic-wrap6"
-              /></a>
-            </li>
-            <li><a href="#"></a></li>
-          </ul>
+          <div class="pic-list clearfix">
+            <a href="#"></a>
+            <ul>
+              <li>
+                <a href="#"
+                  ><img
+                    src="products/detail-product-pic-wrap2.png"
+                    alt="detail-product-pic-wrap2"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="products/detail-product-pic-wrap3.png"
+                    alt="detail-product-pic-wrap3"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="products/detail-product-pic-wrap4.png"
+                    alt="detail-product-pic-wrap4"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="products/detail-product-pic-wrap5.png"
+                    alt="detail-product-pic-wrap5"
+                /></a>
+              </li>
+            </ul>
+            <a href="#"></a>
+          </div>
           <ul class="pic-description">
             <li>商品编号：0468256644</li>
             <li><a href="#">分享</a></li>
@@ -200,14 +195,14 @@
       <!-- 右边购买选择区域 -->
       <div class="shopping-choices fl">
         <div class="shopping-choices-product-name">
-          Apple iPhone 6s（A1700）64G玫瑰金色 移动通信电信4G手机
+          Apple iPhone 12 (A2404) 128GB 蓝色 支持移动联通电信5G 双卡双待手机
         </div>
         <div class="news">
           推荐选择下方[移动优惠购],手机套餐齐搞定,不用换号,每月还有花费返
         </div>
         <div class="price">
           <span class="shopping-choices-title">价格</span><span>￥</span
-          ><span>5299</span><a href="#">降价通知</a><span>累计评价</span
+          ><span>6799</span><a href="#">降价通知</a><span>累计评价</span
           ><a href="#">612188</a>
         </div>
         <div class="promotion clearfix">
@@ -239,10 +234,11 @@
         <div class="color-choices choice-box clearfix">
           <span class="shopping-choices-title">选择颜色</span>
           <ul>
-            <li><a href="#">金色</a></li>
-            <li><a href="#">银色</a></li>
             <li><a href="#">黑色</a></li>
-            <li><a href="#">玫瑰金</a></li>
+            <li><a href="#">白色</a></li>
+            <li><a href="#">蓝色</a></li>
+            <li><a href="#">绿色</a></li>
+            <li><a href="#">红色</a></li>
           </ul>
         </div>
         <div class="version-choices choice-box clearfix">
@@ -255,9 +251,9 @@
         <div class="memory-choices choice-box clearfix">
           <span class="shopping-choices-title">选择容量</span>
           <ul class="fl">
-            <li><a href="#">16GB</a></li>
             <li><a href="#">64GB</a></li>
             <li><a href="#">128GB</a></li>
+            <li><a href="#">256GB</a></li>
           </ul>
         </div>
         <div class="purchase-choices choice-box clearfix">
@@ -290,88 +286,112 @@
       <div class="more-products-aside-wrap fl">
         <div class="more-products-categories fl">
           <div class="more-products-categories-tabs">
-            <ul>
-              <li>
-                <a href="#" class="more-products-categories-tabs-active"
-                  >相关分类</a
-                >
-              </li>
-              <li>
-                <a href="#">推荐品牌</a>
-              </li>
+            <ul id="more-products-categories-tabs">
+              <li class="more-products-categories-tabs-active">相关分类</li>
+              <li>推荐品牌</li>
             </ul>
           </div>
-          <div class="more-products-categories-list">
-            <ul>
-              <li><a href="#">手机</a></li>
-              <li><a href="#">手机壳</a></li>
-              <li><a href="#">内存卡</a></li>
-              <li><a href="#">iPhone配件</a></li>
-              <li><a href="#">贴膜</a></li>
-              <li><a href="#">手机耳机</a></li>
-              <li><a href="#">移动电源</a></li>
-              <li><a href="#">平板电脑</a></li>
-              <li><a href="#">笔记本</a></li>
-              <li><a href="#">蓝牙耳机</a></li>
-            </ul>
+          <div id="more-products-categories-tab-items">
+            <div
+              class="more-products-categories-tab-item more-products-categories-tab-item-selected"
+            >
+              <ul class="more-products-categories-list">
+                <li><a href="#">手机</a></li>
+                <li><a href="#">手机壳</a></li>
+                <li><a href="#">内存卡</a></li>
+                <li><a href="#">iPhone配件</a></li>
+                <li><a href="#">贴膜</a></li>
+                <li><a href="#">手机耳机</a></li>
+                <li><a href="#">移动电源</a></li>
+                <li><a href="#">平板电脑</a></li>
+                <li><a href="#">笔记本</a></li>
+                <li><a href="#">蓝牙耳机</a></li>
+              </ul>
+            </div>
+            <div class="more-products-categories-tab-item">
+              <ul class="more-products-categories-list">
+                <li><a href="#">苹果</a></li>
+                <li><a href="#">小米</a></li>
+                <li><a href="#">联想</a></li>
+                <li><a href="#">宏碁</a></li>
+                <li><a href="#">华硕</a></li>
+                <li><a href="#">美的</a></li>
+                <li><a href="#">松下</a></li>
+                <li><a href="#">东芝</a></li>
+                <li><a href="#">飞利浦</a></li>
+                <li><a href="#">戴尔</a></li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="more-products">
           <div class="more-products-title">购买了此商品的用户还买了</div>
           <ul>
             <li>
-              <img
-                src="products/detail-more-products1.png"
-                alt="detail-more-products1"
-              />
-              <h5>博羽10000mah 双USB Y7 移动充电器 充电宝</h5>
-              <div><span>￥49</span></div>
-              <a href="#">加入购物车</a>
+              <a href="">
+                <img
+                  src="products/detail-more-products1.png"
+                  alt="detail-more-products1"
+                />
+                <h5>博羽10000mah 双USB Y7 移动充电器 充电宝</h5>
+                <div><span>￥49</span></div>
+              </a>
+              <a href="#" class="add-to-cart">加入购物车</a>
             </li>
             <li>
-              <img
-                src="products/detail-more-products2.png"
-                alt="detail-more-products2"
-              />
-              <h5>蓝孩 苹果iPhone6S 抗蓝光 优质手机 手感好</h5>
-              <div><span>￥4568</span></div>
-              <a href="#">加入购物车</a>
+              <a href="#">
+                <img
+                  src="products/detail-more-products2.png"
+                  alt="detail-more-products2"
+                />
+                <h5>蓝孩 苹果iPhone11 抗蓝光 优质手机 手感好</h5>
+                <div><span>￥5618</span></div>
+              </a>
+              <a href="#" class="add-to-cart">加入购物车</a>
             </li>
             <li>
-              <img
-                src="products/detail-more-products3.png"
-                alt="detail-more-products3"
-              />
-              <h5>半岛铁盒 移动电源 快速充电 保证用电</h5>
-              <div><span>￥39</span></div>
-              <a href="#">加入购物车</a>
+              <a href="#">
+                <img
+                  src="products/detail-more-products3.png"
+                  alt="detail-more-products3"
+                />
+                <h5>半岛铁盒 移动电源 快速充电 保证用电</h5>
+                <div><span>￥39</span></div>
+              </a>
+              <a href="#" class="add-to-cart">加入购物车</a>
             </li>
             <li>
-              <img
-                src="products/detail-more-products1.png"
-                alt="detail-more-products1"
-              />
-              <h5>博羽10000mah 双USB Y7 移动充电器 充电宝</h5>
-              <div><span>￥49</span></div>
-              <a href="#">加入购物车</a>
+              <a href="#">
+                <img
+                  src="products/detail-more-products1.png"
+                  alt="detail-more-products1"
+                />
+                <h5>博羽10000mah 双USB Y7 移动充电器 充电宝</h5>
+                <div><span>￥49</span></div>
+              </a>
+              <a href="#" class="add-to-cart">加入购物车</a>
             </li>
             <li>
-              <img
-                src="products/detail-more-products2.png"
-                alt="detail-more-products2"
-              />
-              <h5>蓝孩 苹果iPhone6S 抗蓝光 优质手机 手感好</h5>
-              <div><span>￥4568</span></div>
-              <a href="#">加入购物车</a>
+              <a href="#">
+                <img
+                  src="products/detail-more-products2.png"
+                  alt="detail-more-products2"
+                />
+                <h5>蓝孩 苹果iPhone6S 抗蓝光 优质手机 手感好</h5>
+                <div><span>￥4568</span></div>
+              </a>
+              <a href="#" class="add-to-cart">加入购物车</a>
             </li>
             <li>
-              <img
-                src="products/detail-more-products3.png"
-                alt="detail-more-products3"
-              />
-              <h5>半岛铁盒 移动电源 快速充电 保证用电</h5>
-              <div><span>￥39</span></div>
-              <a href="#">加入购物车</a>
+              <a href="#">
+                <img
+                  src="products/detail-more-products3.png"
+                  alt="detail-more-products3"
+                />
+                <h5>半岛铁盒 移动电源 快速充电 保证用电</h5>
+                <div><span>￥39</span></div>
+              </a>
+              <a href="#" class="add-to-cart">加入购物车</a>
             </li>
           </ul>
         </div>
@@ -402,7 +422,7 @@
                         alt="detail-settings1"
                       />
                     </div>
-                    <p>￥5299.00</p>
+                    <p>￥6799.00</p>
                   </a>
                 </div>
                 <i></i>
@@ -467,60 +487,280 @@
             <div class="fittings-result fl">
               <div>已选购<em>0</em>件搭配</div>
               <p>套餐价：</p>
-              <span>￥</span><strong>5299.00</strong>
+              <span>￥</span><strong>6799.00</strong>
               <a href="#">加入购物车</a>
             </div>
           </div>
         </div>
         <div class="product-details">
           <div class="product-detail-tabs">
-            <ul>
-              <li>
-                <a href="#" class="product-detail-tabs-selected">商品介绍</a>
-              </li>
-              <li><a href="#">规格与包装</a></li>
-              <li><a href="#">售后保障</a></li>
-              <li>
-                <a href="#">商品评价<span>（5000）</span></a>
-              </li>
-              <li><a href="#">手机社区</a></li>
+            <ul id="product-detail-tabs">
+              <li class="product-detail-tabs-selected">商品介绍</li>
+              <li>规格与包装</li>
+              <li>售后保障</li>
+              <li>商品评价<span>（5000）</span></li>
+              <li>手机社区</li>
             </ul>
           </div>
-          <div class="product-detail-tab-content">
-            <div class="product-detail-tab-content-parameter-overview">
-              分辨率：1920*1080(FHD) <br />
-              后置摄像头：1200万像素<br />
-              前置摄像头：500万像素<br />
-              核 数：其他<br />
-              频 率：以官网信息为准<br />
-              品牌： Apple ♥关注<br />
-              商品名称：APPLEiPhone 6s Plus<br />
-              商品编号：1861098<br />
-              商品毛重：0.51kg<br />
-              商品产地：中国大陆<br />
-              热点：指纹识别，Apple Pay，金属机身，拍照神器<br />
-              系统：苹果（IOS）<br />
-              像素：1000-1600万<br />
-              机身内存：64GB
-              <a href="#">查看更多参数</a>
+          <div id="product-detail-tab-items">
+            <div class="product-detail-tab-content product-detail-tab-content-selected">
+              <div class="product-detail-tab-content-parameter-overview">
+                分辨率：2532*1170(FHD) <br />
+                后置摄像头：1200万像素<br />
+                前置摄像头：1200万像素<br />
+                核 数：其他<br />
+                频 率：以官网信息为准<br />
+                品牌： Apple ♥关注<br />
+                商品名称：APPLEiPhone 12<br />
+                商品编号：1861098<br />
+                <span id="more-para-btn">查看更多参数</span>
+                <div
+                  class="product-detail-tab-content-parameter-overview-more"
+                  id="more-para"
+                >
+                  商品毛重：162g<br />
+                  商品产地：中国大陆<br />
+                  热点：指纹识别，Apple Pay，金属机身，拍照神器<br />
+                  系统：苹果（IOS）<br />
+                  像素：1000-1600万<br />
+                  机身内存：64GB
+                  <span id="less-para-btn">收起部分参数</span>
+                </div>
+              </div>
+              <div class="product-detail-tab-content-img1">
+                <img
+                  src="products/detail-product-details1.jpg"
+                  alt="detail-product-details1"
+                />
+              </div>
             </div>
-            <div class="product-detail-tab-content-img1">
-              <img
-                src="products/detail-product-details1.png"
-                alt="detail-product-details1"
-              />
-            </div>
-            <div class="product-detail-tab-content-img2">
-              <img
-                src="products/detail-product-details2.png"
-                alt="detail-product-details2"
-              />
-            </div>
-            <div class="product-detail-tab-content-img3">
-              <img
-                src="products/detail-product-details3.png"
-                alt="detail-product-details3"
-              />
+            <div
+              class="product-detail-tab-content "
+            >
+              <div class="p-item">
+                <h3>主体</h3>
+                <dl>
+                  <dl>
+                    <dt>产品名称</dt>
+                    <dd>iPhone12</dd>
+                  </dl>
+                  <dl>
+                    <dt>首销日期</dt>
+                    <dd>23日</dd>
+                  </dl>
+                  <dl>
+                    <dt>上市月份</dt>
+                    <dd>10月</dd>
+                  </dl>
+                  <dl>
+                    <dt>上市年份</dt>
+                    <dd>2020年</dd>
+                  </dl>
+                  <dl>
+                    <dt>
+                      入网型号<span class="question-mark"
+                        ><div class="explanation">工业代号或者入网型号</div></span
+                      >
+                    </dt>
+                    <dd>A2404</dd>
+                  </dl>
+                </dl>
+              </div>
+              <div class="p-item">
+                <h3>基本信息</h3>
+                <dl>
+                  <dl>
+                    <dt>机身宽度（mm）</dt>
+                    <dd>71.5</dd>
+                  </dl>
+                  <dl>
+                    <dt>机身厚度（mm）</dt>
+                    <dd>7.4</dd>
+                  </dl>
+                  <dl>
+                    <dt>机身重量（g）</dt>
+                    <dd>162</dd>
+                  </dl>
+                  <dl>
+                    <dt>运营商标志或内容<span class="question-mark"
+                      ><div class="explanation">定制机往往会有运营商的元素在手机的某些位置，该属性会介绍这些元素出现的位置。</div></dt>
+                    <dd>无</dd>
+                  </dl>
+                  <dl>
+                    <dt>机身材质分类</dt>
+                    <dd>其他</dd>
+                  </dl>
+                  <dl>
+                    <dt>机身长度（mm）</dt>
+                    <dd>146.7</dd>
+                  </dl>
+                  <dl>
+                    <dt>机身材质工艺</dt>
+                    <dd>以官网信息为准</dd>
+                  </dl>
+                </dl>
+              </div>
+              <div class="p-item">
+                <h3>主芯片
+                  </h3>
+                <dl>
+                  <dl>
+                    <dt>CPU品牌
+                      </dt>
+                    <dd>Apple</dd>
+                  </dl>
+                </dl>
+              </div>
+              <div class="p-item">
+                <h3>屏幕
+                  </h3>
+                <dl>
+                  <dl>
+                    <dt>屏幕材质类型
+                      </dt>
+                    <dd>OLED</dd>
+                  </dl>
+                  <dl>
+                    <dt>屏幕刷新率
+                      </dt>
+                    <dd>其他</dd>
+                  </dl>
+                  <dl>
+                    <dt>主屏幕尺寸（英寸）
+                      </dt>
+                    <dd>6.1英寸</dd>
+                  </dl>
+                </dl>
+              </div>
+              <div class="p-item">
+                <h3>后置摄像头
+                  </h3>
+                <dl>
+                  <dl>
+                    <dt>后摄主摄光圈
+                      </dt>
+                    <dd>f/2.4</dd>
+                  </dl>
+                  <dl>
+                    <dt>闪光灯
+                      </dt>
+                    <dd>其他闪光灯</dd>
+                  </dl>
+                </dl>
+              </div>
+              <div class="p-item">
+                <h3>前置摄像头
+                  </h3>
+                <dl>
+                  <dl>
+                    <dt>前摄主摄光圈
+                      </dt>
+                    <dd>f/2.2</dd>
+                  </dl>
+                </dl>
+              </div>
+              <div class="p-item">
+                <h3>电池信息
+                  </h3>
+                <dl>
+                  <dl>
+                    <dt>电池是否可拆卸<span class="question-mark"
+                      ><div class="explanation">不可拆卸电池手机更加节省内部空间，密封性更好，请勿在没有专业人士的帮助下自行拆卸。</div>
+                      </dt>
+                    <dd>电池不可拆卸</dd>
+                  </dl>
+                  <dl>
+                    <dt>无线充电<span class="question-mark"
+                      ><div class="explanation">无线充电只是个功能，请注意支持无线充电的产品其包装是否带有无线充电的配件，如没有需要自行单配哦。。</div>
+                      </dt>
+                    <dd>支持无线充电</dd>
+                  </dl>
+                  <dl>
+                    <dt>充电器
+                      </dt>
+                    <dd>其他</dd>
+                  </dl>
+                </dl>
+              </div>
+              <div class="p-item">
+                <h3>网络支持
+                  </h3>
+                <dl>
+                  <dl>
+                    <dt>网络频率（2G/3G）</dt>
+                    <dd>以官网信息为准</dd>
+                  </dl>
+                  <dl>
+                    <dt>最大支持SIM卡数量
+                      </dt>
+                    <dd>2个</dd>
+                  </dl>
+                  <dl>
+                    <dt>SIM卡类型<span class="question-mark"
+                      ><div class="explanation">sim卡的规格，大卡、小卡或者nano卡。如果副卡有不同可在下方副卡规格中填写或显示</div>
+                      </dt>
+                    <dd>Nano SIM</dd>
+                  </dl>
+                  <dl>
+                    <dt>4G网络<span class="question-mark"
+                      ><div class="explanation">单卡手机或者主卡的4G网络在这里填写，副卡的网络在副sim卡4G网络中填写</div>
+                      </dt>
+                    <dd>4G FDD-LTE(联通)；4G TD-LTE(移动)；4G FDD-LTE(联通、电信)</dd>
+                  </dl>
+                  <dl>
+                    <dt>3G/2G网络
+                      </dt>
+                    <dd>3G TD-SCDMA(移动)；3G WCDMA(联通)；3G CDMA2000(电信)；2G GSM(移动/联通)；2G CDMA(电信)</dd>
+                  </dl>
+                  <dl>
+                    <dt>5G网络
+                      </dt>
+                    <dd>移动5G；联通5G；电信5G</dd>
+                  </dl>
+                  <dl>
+                    <dt>双卡机类型
+                      </dt>
+                    <dd>双卡双待</dd>
+                  </dl>
+                </dl>
+              </div>
+              <div class="p-item">
+                <h3>数据接口
+                  </h3>
+                <dl>
+                  <dl>
+                    <dt>数据传输接口
+                      </dt>
+                    <dd>WIFI；蓝牙；NFC</dd>
+                  </dl>
+                  <dl>
+                    <dt>NFC/NFC模式
+                      </dt>
+                    <dd>支持（读卡器模式）</dd>
+                  </dl>
+                  <dl>
+                    <dt>充电接口类型
+                      </dt>
+                    <dd>Lightning（iPhone）</dd>
+                  </dl>
+                  <dl>
+                    <dt>耳机接口类型
+                      </dt>
+                    <dd>Lightning</dd>
+                  </dl>
+                </dl>
+              </div>
+              <div class="p-item">
+                <h3>辅助功能
+                  </h3>
+                <dl>
+                  <dl>
+                    <dt>常用功能
+                      </dt>
+                    <dd>计算器</dd>
+                  </dl>
+                </dl>
+              </div>
             </div>
           </div>
         </div>
@@ -550,9 +790,9 @@
                 <img src="products/detail-likes2.png" alt="detail-likes2" />
               </div>
               <div class="likes-bd-desc">
-                Apple/苹果iPhone 6s /6s Plus 16G 64G 128G
+                Apple/苹果iPhone 8 16G 64G 128G
               </div>
-              <div class="likes-bd-price">￥4398</div>
+              <div class="likes-bd-price">￥3398</div>
               <div class="likes-bd-comment">已有<em>59</em>人评价</div>
             </a>
           </li>
@@ -574,7 +814,7 @@
                 <img src="products/detail-likes4.png" alt="detail-likes4" />
               </div>
               <div class="likes-bd-desc">
-                EXCO宜适酷 全屏钢化玻璃膜For iPhone6s/6 Plus
+                EXCO宜适酷 全屏钢化玻璃膜For iPhone11
               </div>
               <div class="likes-bd-price">￥59</div>
               <div class="likes-bd-comment">已有<em>700</em>人评价</div>
@@ -586,7 +826,7 @@
                 <img src="products/detail-likes5.png" alt="detail-likes5" />
               </div>
               <div class="likes-bd-desc">
-                Apple 苹果iPhone 6（A1586）16G 金色
+                Apple 苹果iPhone 8（A1586）64G 金色
               </div>
               <div class="likes-bd-price">￥3799</div>
               <div class="likes-bd-comment">已有<em>78</em>人评价</div>
@@ -724,5 +964,6 @@
     <!-- footer end -->
     <!-- 引入JavaScript -->
     <script src="./js/common.js"></script>
+    <script src="./js/detail.js"></script>
   </body>
 </html>
