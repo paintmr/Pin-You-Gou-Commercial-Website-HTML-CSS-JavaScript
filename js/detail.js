@@ -43,5 +43,15 @@ for (let i = 0; i < productDetailTabs.length; i++) {
     }
     productDetailTabItems[i].className = 'product-detail-tab-content product-detail-tab-content-selected';
   }
+}
 
+// 切换评论顶部被选中的小方块
+var generalComments = document.getElementById('general-comments').getElementsByTagName('span');
+for (let i = 0; i < generalComments.length; i++) {
+  generalComments[i].onclick = function () {
+    for (let i = 0; i < generalComments.length; i++) {
+      generalComments[i].className = '';
+    }
+    this.className = 'general-comments-selected';
+  }
 }
