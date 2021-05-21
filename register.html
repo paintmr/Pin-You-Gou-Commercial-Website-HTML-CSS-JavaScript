@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/base.css" />
     <!-- 引入注册页面样式文件 -->
     <link rel="stylesheet" href="css/register.css" />
+    <!-- 引入JavaScript代碼 -->
+    <script src="js/register.js"></script>
   </head>
   <body>
     <div class="w">
@@ -30,21 +32,37 @@
           <form action="#">
             <ul>
               <li>
-                <label for="">手机号：</label
-                ><input type="text" class="inpt" /><span class="error"
-                  ><i class="error-icon"></i>手机号码格式不正确，请重新输入
+                <label for="mobile">手机号：</label
+                ><input type="text" class="inpt" id="mobile" /><span
+                  class="info"
+                  ><i class="info-icon"></i>请输入11位数字
                 </span>
               </li>
               <li>
-                <label for="">短信验证码：</label
-                ><input type="text" class="inpt" /><span class="success"
-                  ><i class="success-icon"></i>短信验证码输入正确
+                <label for="qq">QQ号：</label
+                ><input type="text" class="inpt" id="qq" /><span class="info"
+                  ><i class="info-icon"></i>请输入至少4位数字
                 </span>
               </li>
               <li>
-                <label for="">登录密码：</label
-                ><input type="password" class="inpt" /><span class="error"
-                  ><i class="error-icon"></i>手机号码格式不正确，请重新输入
+                <label for="nickname">昵称：</label
+                ><input type="text" class="inpt" id="nickname" /><span
+                  class="info"
+                  ><i class="info-icon"></i>请输入2-6个汉字
+                </span>
+              </li>
+              <li>
+                <label for="textmsg">短信验证码：</label
+                ><input type="text" class="inpt" id="textmsg" /><span
+                  class="info"
+                  ><i class="info-icon"></i>请输入6位数字
+                </span>
+              </li>
+              <li>
+                <label for="psw">登录密码：</label
+                ><input type="password" class="inpt" id="psw" /><span
+                  class="info"
+                  ><i class="info-icon"></i>6-16位,字母,数字,下划线,短横
                 </span>
               </li>
               <li class="safe">
@@ -52,9 +70,10 @@
                 ><em class="strong">强</em>
               </li>
               <li>
-                <label for="">确认密码：</label
-                ><input type="password" class="inpt" /><span class="error"
-                  ><i class="error-icon"></i>手机号码格式不正确，请重新输入
+                <label for="pswconfirm">确认密码：</label
+                ><input type="password" class="inpt" id="pswconfirm" /><span
+                  class="info"
+                  ><i class="info-icon"></i>请再输入一次上面的密码
                 </span>
               </li>
               <li class="agree">

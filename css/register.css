@@ -10,7 +10,7 @@ header {
   padding-top: 18px;
 }
 .registerarea {
-  height: 522px;
+  /* height: 522px; */
   border: 1px solid #ccc;
   margin-top: 20px;
 }
@@ -48,9 +48,13 @@ header {
   height: 37px;
   border: 1px solid #ccc;
 }
+.info {
+  color: #999;
+}
 .error {
   color: #c81523;
 }
+.info-icon,
 .error-icon,
 .success-icon {
   display: inline-block;
@@ -58,6 +62,9 @@ header {
   width: 20px;
   height: 20px;
   margin: -2px 3px 0 5px;
+}
+.info-icon {
+  background: url(../images/register-info.png) no-repeat;
 }
 .error-icon {
   background: url(../images/register-error-icon.png) no-repeat;
